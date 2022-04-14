@@ -1,0 +1,122 @@
+.main::-webkit-scrollbar{
+    width: 5px;;
+}
+.main::-webkit-scrollbar-track{
+    background: rgb(16, 16, 44);
+}
+.main::-webkit-scrollbar-thumb{
+    background: rgb(255, 196, 0);
+    border-radius: 10px;
+}
+.main::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(0, 46, 253);
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    padding: 10px;
+    width: 100%;
+}
+.logo{
+    margin-right: auto;
+}
+.links{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.links li{
+    list-style: none;
+}
+.links li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: whitesmoke;
+}
+.maincontainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.sidebar{
+    width: 200px;
+    background: rgba(11, 17, 36, 0.89);
+    height: 100vh;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.menubuttons{
+    width: 100%;
+}
+.menubuttons .menus{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.menubuttons .menus .mainbuttons{
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+.menubuttons .menus .mainbuttons li{
+    list-style: none;
+    line-height: 40px;
+    font-weight: 500;
+    font-size: 18px;
+    border-bottom: 2px solid rgb(6, 31, 31);
+    padding: 1px;
+    color: gold;
+    cursor: pointer;
+    transition: 0.3s;
+    user-select: none;
+}
+.menubuttons .menus .mainbuttons li:hover{
+    background: rgba(11, 17, 36, 0.39);
+    border-bottom: 2px solid rgba(6, 31, 31);
+}
+.menubuttons .menus .mainbuttons li.active{
+    background: rgba(11, 17, 36, 0.39);
+    border-bottom: 2px solid rgba(16, 167, 167, 0.925);
+}
+.menubuttons .menus .forlogout{
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    position: absolute;
+    bottom: 10%;
+}
+.menubuttons .menus .forlogout li{
+    list-style: none;
+    line-height: 40px;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 1;
+    color: gold;
+    transition: 0.3s;
+    cursor: pointer;
+    user-select: none;
+}
+.menubuttons .menus .forlogout li:hover{
+    background: rgba(11, 17, 36, 0.39);
+}
+.main{
+    height: 100vh;
+    width: 100%;
+}
